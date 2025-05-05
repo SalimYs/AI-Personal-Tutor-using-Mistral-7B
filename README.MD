@@ -111,17 +111,20 @@ TOP_P = 0.9                  # Nucleus sampling
 * Clear cache after each generation:
 
   ```python
+
+torch.cuda.empty\_cache()
+
   ```
 
 torch.cuda.empty\_cache()
 
 ````
 - Monitor usage:
-  ```bash
-watch -n 1 nvidia-smi
-````
 
----
+   ```bash
+watch -n 1 nvidia-smi
+   ```
+
 
 ## 🔧 Troubleshooting
 

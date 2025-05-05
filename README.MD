@@ -1,6 +1,6 @@
 # AI-Powered Personal Tutor
 
-This repository provides a step-by-step guide to set up an AI-powered personal tutor chatbot using the Mistral 7B Instruct v0.3 model, optimized for an RTX 4070 with minimal VRAM usage (\~4 GB).
+This repository provides a step-by-step guide to set up an AI-powered personal tutor chatbot using the Mistral 7B Instruct v0.3 model, optimized for an RTX   with minimal VRAM usage (\~4 GB).
 
 ---
 

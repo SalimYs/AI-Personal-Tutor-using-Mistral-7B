@@ -1,13 +1,13 @@
 # AI-Powered Personal Tutor
 
-This repository provides a step-by-step guide to set up an AI-powered personal tutor chatbot using the Mistral 7B Instruct v0.3 model, optimized for an RTX   with minimal VRAM usage (\~4 GB).
+This repository provides a step-by-step guide to set up an AI-powered personal tutor chatbot using the Mistral 7B Instruct v0.3 model, optimized for an RTX  with minimal VRAM usage (\~4 GB).
 
 ---
 
 ## 📋 Prerequisites
 
 * **Windows 10/11** with WSL 2 installed
-* **GPU**: NVIDIA RTX  (with at least 4 GB VRAM)
+* **GPU**: NVIDIA RTX  (with at least 4 GB VRAM)
 * **WSL 2** enabled and configured for GPU passthrough
 * **Python 3.8+** installed in WSL
 
@@ -107,24 +107,22 @@ TOP_P = 0.9                  # Nucleus sampling
 
 ### GPU Memory Management
 
-* Use 4-bit quantization via `bitsandbytes` to reduce VRAM.
+* Use 4‑bit quantization via `bitsandbytes` to reduce VRAM.
+
 * Clear cache after each generation:
 
   ```python
-
-torch.cuda.empty\_cache()
-
+  import torch
+  torch.cuda.empty_cache()
   ```
 
-torch.cuda.empty\_cache()
+* Monitor GPU usage:
 
-````
-- Monitor usage:
+  ```bash
+  watch -n 1 nvidia-smi
+  ```
 
-   ```bash
-watch -n 1 nvidia-smi
-   ```
-
+---
 
 ## 🔧 Troubleshooting
 
@@ -173,4 +171,6 @@ import gradio as gr
 
 ---
 
+## 📝 License
 
+This project is released under the MIT License. See [`LICENSE`](LICENSE) for details.

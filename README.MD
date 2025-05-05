@@ -7,7 +7,7 @@ This repository provides a step-by-step guide to set up an AI-powered personal t
 ## 📋 Prerequisites
 
 * **Windows 10/11** with WSL 2 installed
-* **GPU**: NVIDIA RTX 4070 (with at least 4 GB VRAM)
+* **GPU**: NVIDIA RTX  (with at least 4 GB VRAM)
 * **WSL 2** enabled and configured for GPU passthrough
 * **Python 3.8+** installed in WSL
 
